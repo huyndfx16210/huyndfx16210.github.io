@@ -1,0 +1,92 @@
+/* Chỉ hiện trên màn hình mobile */
+@media only screen and (max-width: 600px) {
+  /* Phần mobile set media (600) và Breakpoint Bootstrap (576) hơi khác kích thước */
+  section > .container {
+    width: auto;
+    padding: 15px 0 0 0;
+  }
+
+  /* Set phan hinh anh & text */
+  .image-banner {
+    object-fit: none;
+  }
+  #banner {
+    top: 50%;
+    font-size: 16px;
+  }
+  #banner h1 {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  /* Set phan nav ( Thanh nam ngang ) */
+  #nav-bar img {
+    display: none;
+  }
+  .nav-content {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    text-align: left;
+    border: none;
+  }
+  .nav-onlybox {
+    display: none;
+  }
+
+  /* Set phần thông tin cá nhân ( css gird ) */
+  #job-info .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .about-h {
+    padding: 25px 50px 0 50px;
+  }
+  .about-p {
+    padding: 15px 50px 30px 50px;
+  }
+
+  /* Phần chứng chỉ & Phần dự án không yêu cầu Breakpoint của Bootstrap
+  Phần chứng chỉ - giải thưởng ( css grid ) */
+  #certificate h3 {
+    font-size: large;
+  }
+  .img-cert {
+    width: 80%;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: center;
+  }
+  #certificate .container {
+    margin: 0 50px;
+  }
+  .sert-content {
+    display: block;
+    border-bottom: 1px solid #d6c08d;
+  }
+  .sert-content div {
+    margin: 0 0 0 25px;
+  }
+
+  /* Phần dự án ( css grid ) */
+  .project-box {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  #project .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 50px;
+  }
+
+  /* Phần liên hệ */
+  #footer .container {
+    padding: 15px 0;
+  }
+  #footer a {
+    font-size: 14px;
+  }
+  #footer a i {
+    font-size: x-large;
+  }
+}
